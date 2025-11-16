@@ -1397,6 +1397,7 @@ We have 2 options for our compute node:
 ## Network Configuration
 
 For any communication between the devices, we will need to add and configure the network adapters in VirtualBox which can be seen in the picture below where to be found.
+
 ![vb-nat.png](resources/vb-nat.png)
 
 ### Phase 1: Configure Network Adapters
@@ -1406,7 +1407,9 @@ For the head node:
 1. Under **Network**, click on "Adapter 1". This represents our external network. (If you can see it, make sure you are on the expert tab in the top left)
 2. Click on "Port Forwarding" and add a rule by clicking the green plus in the top right.
 3. In that rule, set host port to 2222 and guest port to 22 and click "Okay" to finish. This will open ports to SSH from your personal computer into your virtual machine.
+
 ![vb-port-forwarding-rules.png](resources/vb-port-forwarding-rules.png)
+
 4. Click on "Adapter 2", enable the network adapter and change "Attached to" to "Internal Network". This will represent our internal network between our head node and compute node.
 
 Similarly for the compute node:
@@ -1489,9 +1492,11 @@ Adding the below in the file will set it permanently:
 ```
 
 An example of the `/etc/hosts` file is below:
+
 ![vb-etc-host.png](resources/vb-etc-host.png)
 
 This is the network diagram illustrating the network setup:
+
 ![vb-topology.png](resources/vb-topology.png)
 
 ### Phase 5: Configuring internet connection for the Compute Node
