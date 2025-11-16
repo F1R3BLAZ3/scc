@@ -1361,7 +1361,7 @@ _Yippee! First phase complete_!
 In order to use the distribution of your choice, you will need to download their ISO image. Each distribution will have varies types of images, like ones that come with a graphics user interface (also sometimes referred to as "desktop images") but in this case we would want to use the "minimal" or "server" images.
 
 If you are using Rocky Linux you can download the minimal ISO for your architecture from [https://rockylinux.org/download](https://rockylinux.org/download).
-![[vb-rocky-download.png]]
+![vb-rocky-download.png](resources/vb-rocky-download.png)
 
 > [!CAUTION]
 > **AMD Processor Users**: Verify your processor is compatible with Rocky Linux before installation. Incompatible processors may cause boot hangs, black screens, or kernel panic errors.
@@ -1615,7 +1615,7 @@ nmcli connection show
 
 ## Finishing Touches
 
-Now that we have our base setup, you can follow the other tutorials to set up things like [tmux and system monitoring](tutorial2#terminal-multiplexers-and-basic-system-monitoring), [NFS](tutorial2/README.md#network-file-system), [Lmod](https://github.com/chpc-tech-eval/scc/edit/main/README.md) or [running HPL across a cluster](tutorial3/README.md#running-hpl-across-multiple-nodes).
+Now that we have our base setup, you can follow the other tutorials to set up things like [tmux and system monitoring](../tutorial2#terminal-multiplexers-and-basic-system-monitoring), [NFS](../tutorial2/README.md#network-file-system), [Lmod](https://github.com/chpc-tech-eval/scc/edit/main/README.md) or [running HPL across a cluster](../tutorial3/README.md#running-hpl-across-multiple-nodes).
 
 >[!NOTE]
 > If you get error with MPI where it MPI processes are unable to communicate or connect with each other. Run you `mpirun` command with the flags `-np 6 --mca btl_tcp_if_include` and `--mca btl ^openib`.
