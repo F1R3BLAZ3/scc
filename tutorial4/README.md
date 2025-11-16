@@ -1615,7 +1615,7 @@ nmcli connection show
 
 ## Finishing Touches
 
-Now that we have our base setup, you can follow the other tutorials to set up things like [tmux and system monitoring](../tutorial2#terminal-multiplexers-and-basic-system-monitoring), [NFS](../tutorial2/README.md#network-file-system), [Lmod](https://github.com/chpc-tech-eval/scc/edit/main/README.md) or [running HPL across a cluster](../tutorial3/README.md#running-hpl-across-multiple-nodes).
+Now that we have our base setup, you can follow the other tutorials to set up things like [tmux and system monitoring](../tutorial2#terminal-multiplexers-and-basic-system-monitoring), [NFS](../tutorial2/README.md#network-file-system), [Lmod](../tutorial3/README.md#install-lmod) or [running HPL across a cluster](../tutorial3/README.md#running-hpl-across-multiple-nodes).
 
 >[!NOTE]
 > If you get error with MPI where it MPI processes are unable to communicate or connect with each other. Run you `mpirun` command with the flags `-np 6 --mca btl_tcp_if_include` and `--mca btl ^openib`.
